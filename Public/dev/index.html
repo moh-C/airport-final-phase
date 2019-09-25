@@ -1,0 +1,210 @@
+<html lang="fa">
+
+<head>
+    <title>سامانه پایش فرودگاه های کشور</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+
+    <script src="./script.js"></script>
+
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body dir="rtl">
+
+    <div class="preload">
+        <img id="airplane" src="./image/airplane-min.png" alt="airplane">
+        <img src="./image/Clouds.png" id="cloud1" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud2" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud3" alt="Clouds" class="cloud">
+        <h3 id="preloader-custom-text1">بارگزاری صفحه برای بار اول ممکن است طول بکشد</h3>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const preload = document.querySelector('.preload');
+            preload.classList.add('destoyed');
+        })
+    </script>
+
+    <header class="header">
+        <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+
+            <div class="primary-navigation">
+
+                <div class="primary-navigation__item primary-navigation__item--home-item primary-navigation__home-item--on-this-page">
+
+                    <a class="primary-navigation__item-home-anchor" href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                        <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>Home</title><path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path></svg>
+                    </a>
+
+                </div>
+
+                <div class="primary-navigation__content">
+                    <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
+                </div>
+                <!-- End of Primary Navigation Content-->
+
+                <ul class="primary-navigation__list">
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>خلاصه مدیریتی</span>
+                        </a>
+
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Statewide Summary Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>گزارش ها</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Airport Details Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>وضعیت روسازی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Maintenance Guidelines Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>دستورالعمل تعمیر و نگهداری</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Pavement Inspection Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>دستورالعمل ارزیابی روسازی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>متفرقه</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Miscellaneous Submenu -->
+                </ul>
+
+            </div>
+            <!--Primary Navigation-->
+
+        </div>
+        <!--header__sticky-wrapper-->
+    </header>
+    <!-- Header -->
+
+</body>
+
+</html>

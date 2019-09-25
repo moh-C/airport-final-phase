@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+    Indiana 2018 IDEA
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script>
+        
+        window.angularProdMode = true;
+        
+
+        window.appTemplate = '%3Cp%3EThis%20program%20presents%20the%20results%20of%20the%20Indiana%20Department%20of%20Transportation%2C%20Office%20of%20Aviation%202018%20pavement%20management%20system%20implementation.%20%20%20%20During%20this%20project%20the%20runway%2C%20taxiway%2C%20apron%2C%20T-hangar%2C%20and%20helipad%20pavements%20at%20selected%20airports%20in%20Indiana%20were%20evaluated.%20%20%20%20This%20program%20presents%20the%20results%20of%20the%20APMS%20update%20and%20is%20organized%20into%20the%20following%20modules%20accessible%20from%20the%20menu%20above%3A%3C/p%3E%3Chtml-and-image%20configPath%3D%22home-page/html-and-image.json%22%3E%20%20%3Cul%3E%20%20%20%20%3Cli%3E%20%20%20%20%20%20%3Cp%3E%20%20%20%20%20%20%20%20%3Cb%3E%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22statewide-summary/_statewide-sum-main.html%22%20style%3D%22color%3A%20%23000000%22%3EStatewide%20Summary%3C/a%3E%20%20%20%20%20%20%20%20%3C/b%3E%26%238212%3BView%20a%20summary%20of%20pavement%20inventory%20area%2C%20age%2C%20and%20condition%20information%20at%20the%20statewide%20level.%20This%20section%20also%20includes%20a%20link%20to%20the%202019%20Statewide%20Executive%20Summary%20Report.%20%20%20%20%20%20%20%3C/p%3E%20%20%20%20%3C/li%3E%20%20%20%20%3Cli%3E%20%20%20%20%20%20%3Cp%3E%20%20%20%20%20%20%20%20%3Cb%3E%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22airport-details/airport-details.html%22%20style%3D%22color%3A%20%23000000%22%3EAirport%20Details%3C/a%3E%20%20%20%20%20%20%20%20%3C/b%3E%26%238212%3BView%20detailed%20information%20about%20each%20individual%20airport%20including%20inventory%20information%2C%20condition%20data%2C%20work%20history%20information%2C%20photographs%2C%20%20%20%20%20%20%20%20%20the%20proposed%20maintenance%20and%20rehabilitation%20plan%2C%20and%20a%20copy%20of%20the%20individual%20report.%20%20%20%20%20%20%3C/p%3E%20%20%20%20%3C/li%3E%20%20%20%20%3Cli%3E%20%20%20%20%20%20%3Cp%3E%20%20%20%20%20%20%20%20%3Cb%3E%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22maintenance/_maintenance-main.html%22%20style%3D%22color%3A%20%23000000%22%3EMaintenance%20Guidelines%3C/a%3E%20%20%20%20%20%20%20%20%3C/b%3E%26%238212%3BView%20general%20recommendations%20for%20pavement%20maintenance%20at%20Indiana%20airports%20as%20well%20as%20FAA%20guidelines%20for%20pavement%20maintenance.%20%20%20%20%20%20%3C/p%3E%20%20%20%20%3C/li%3E%20%20%20%20%3Cli%3E%20%20%20%20%20%20%3Cp%3E%20%20%20%20%20%20%20%20%3Cb%3E%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22pavement-inspection/_pci-review-main.html%22%20style%3D%22color%3A%20%23000000%22%3EPavement%20Inspection%3C/a%3E%20%20%20%20%20%20%20%20%3C/b%3E%26%238212%3BReview%20background%20information%20on%20the%20PCI%20survey%20method%20used%20to%20assess%20pavement%20condition.%20%20%20%20%20%20%3C/p%3E%20%20%20%20%3C/li%3E%20%20%20%20%3Cli%3E%20%20%20%20%20%20%3Cp%3E%20%20%20%20%20%20%20%20%3Cb%3E%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22miscellaneous/_miscellaneous-main.html%22%20style%3D%22color%3A%20%23000000%22%3EMiscellaneous%3C/a%3E%20%20%20%20%20%20%20%20%3C/b%3E%26%238212%3BView%20definitions%20of%20acronyms%20used%20throughout%20the%20IDEA%2C%20and%20learn%20about%20this%20program%20as%20well%20as%20Applied%20Pavement%20%20%20%20%20%20%20%20Technology%2C%20Inc.%20%20%20%20%20%20%3C/p%3E%20%20%20%20%3C/li%3E%20%20%3C/ul%3E%3C/html-and-image%3E';
+    </script>
+    <style>
+        @keyframes pulse {
+            0% {
+                opacity: 1
+            }
+            50% {
+                opacity: .2
+            }
+            100% {
+                opacity: 1
+            }
+        }
+    </style>
+    <style>.html-and-image:after{clear:both;content:"";display:table}table:not([class]) th,table:not([class]) td,table:not([class]) th.no-header-styles{line-height:1.25;overflow:hidden;padding:10px 5px}table:not([class]) th{font-size:13px;font-weight:700}table:not([class]){border-collapse:collapse;border-spacing:0;display:table;font-size:12px;margin:10px 0;max-width:100%;border-bottom:1px solid #b0b6c2;border-left:1px solid #b0b6c2;border-collapse:separate;margin:0 auto 48px;}table:not([class]) tbody + tbody{border-top:3px solid #b0b6c2}table:not([class]) thead::-webkit-scrollbar{background-color:#eaeaec}table:not([class]) thead tr{background-color:transparent;position:relative}@media screen{table:not([class]) thead tr th:not([class='no-header-styles']){background-color:#eaeaec;position:-webkit-sticky;position:sticky;top:-2px;z-index:1}}table:not([class]) th{border:1px solid #b0b6c2}table:not([class]) td{border:1px solid #b0b6c2}table:not([class]) caption{font-size:14px;margin-bottom:15px}table:not([class]) th,table:not([class]) td{border:none}table:not([class]) thead tr th,table:not([class]) tbody tr th,table:not([class]) tbody tr td,table:not([class]) tfoot tr th,table:not([class]) tfoot tr td{border-top:1px solid #b0b6c2;border-right:1px solid #b0b6c2}table:not([class]) tr[total-row]{background-color:#eaeaec;font-weight:700}table:not([class]) th.no-header-styles{font-weight:normal}table[zebra-rows] tr{background-color:#fff;}table[zebra-rows] tr:nth-child(2n){background-color:#f7f7f7}.html-and-image{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:1em;}@media screen{.html-and-image__html-container{width:100%}}@media screen and (min-width:1000px){.html-and-image__html-container{float:left;width:33.33333333333333%;width:calc(100% * .3333333333333333 - 50px + .3333333333333333 * 50px)}.html-and-image__html-container:nth-child(n){clear:none;margin-right:50px}.html-and-image__html-container:last-child{margin-right:0}}@media screen{.html-and-image__image-container{width:100%}}@media screen and (min-width:1000px){.html-and-image__image-container{float:left;width:66.66666666666666%;width:calc(100% * .6666666666666666 - 55px + .6666666666666666 * 55px)}.html-and-image__image-container:nth-child(n){clear:none;margin-right:55px}.html-and-image__image-container:last-child{margin-right:0}}</style></head><body>
+
+
+<style>*{border:0;margin:0;padding:0}*{box-sizing:border-box;}*:before,*:after{box-sizing:inherit}img{max-width:100%;vertical-align:bottom}.main__page-title{font-size:20px;font-weight:500;margin-bottom:12px}.main__display-container h2:not([class]){font-size:xlargeText;font-weight:300;margin-bottom:12px}.main__display-container h3:not([class]){font-size:largeText;font-weight:700;margin-bottom:12px}.header--hidden,.main__page-title--hidden{clip:rect(1px,1px,1px,1px);position:absolute !important}.main__display-container p:not([class]){margin-bottom:30px}.main__display-container ul:not([class]),.main__display-container ol:not([class]){list-style:none inside;}.main__display-container ul:not([class]) li,.main__display-container ol:not([class]) li{display:block;margin-left:20px;padding-left:20px;position:relative;}.main__display-container ul:not([class]) li:before,.main__display-container ol:not([class]) li:before{position:absolute}.main__display-container ul:not([class]) li p,.main__display-container ol:not([class]) li p{margin-bottom:10px}.main__display-container ul:not([class]) li:before{background-color:#181d28;border-radius:50%;content:"";height:6px;left:0;top:7.5px;width:6px}.main__display-container ol:not([class]){counter-reset:ordered-list-item;}.main__display-container ol:not([class]) li{counter-increment:ordered-list-item;}.main__display-container ol:not([class]) li:before{background-color:transparent;content:counter(ordered-list-item) ". ";left:0;top:0}.primary-navigation__item--home-item::after,.primary-navigation__item-anchor::after{background-color:#60d33f;bottom:0;content:"";height:6px;left:0;position:absolute;transition:all .3s ease-in-out;width:100%}.primary-navigation__item--home-item:hover::after,.primary-navigation__item--home-item.primary-navigation__home-item--on-this-page::after,.primary-navigation__item:hover .primary-navigation__item-anchor::after,.primary-navigation__item-anchor.primary-navigation__item-anchor--on-this-page::after{transform:translate(0%,0%)}body{color:#181d28;font-family:"Roboto","OpenSans","Helvetica","Arial",sans-serif;font-size:14px;line-height:1.5}body{min-width:750px}.header--hidden,.main__page-title--hidden{clip:rect(1px,1px,1px,1px);position:absolute !important}.main__section-anchor,.secondary-navigation__anchor{color:#b0b6c2;cursor:pointer;display:block;line-height:20px;text-decoration:none;transition:color 300ms,background-color 300ms;}.main__section-anchor:hover,.secondary-navigation__anchor:hover,.main__section-anchor:focus,.secondary-navigation__anchor:focus{color:#fff}.main__section-anchor--active,.secondary-navigation__anchor--active{background-color:#333c4f;color:#60d33f}.main__section-anchor--expanded,.secondary-navigation__anchor--expanded{background-color:#333c4f}.banner{background-position:center;background-repeat:no-repeat;background-size:cover;display:flex;height:125px;margin-bottom:30px;margin-right:-15px;margin-left:-15px;}@media (min-width:800px){.banner{margin-right:-20px;margin-left:-20px}}.banner__content-container{align-items:center;background-color:rgba(255,255,255,0.8);display:flex;margin:20px 15px;padding:15px}.banner__title-image{margin-right:15px}.banner__title-container{display:flex;flex-direction:column;justify-content:center}.banner__title{border-bottom:0;font-size:20px;font-weight:500;margin:0;padding:0}.banner__sub-title{font-size:16px;font-weight:400;margin:0}.breadcrumbs{display:flex;flex-wrap:wrap;font-size:12px;list-style:none inside;padding:17px 12px 11px;}.breadcrumbs__crumb{position:relative;white-space:nowrap}.breadcrumbs__crumb-anchor{border-bottom:3px solid transparent;color:#181d28;margin-right:5px;text-decoration:none;transition:border-color .3s;}.breadcrumbs__crumb-anchor:hover,.breadcrumbs__crumb-anchor:focus{font-weight:700}.breadcrumbs__crumb-separator{margin-right:5px}.breadcrumbs__crumb-current{font-weight:700;border-bottom:3px solid #60d33f}.homepage-footer{background:#eaeaec;bottom:0;box-shadow:0 -4px 4px 0 #eaeaec;display:flex;justify-content:flex-end;left:0;position:fixed;right:0}.header{min-height:50px;}@media (min-height:600px){.header__sticky-wrapper{left:0;position:relative;top:0;transform:translateZ(0);width:100%;min-width:750px;z-index:999}.header__sticky-wrapper--sticky{position:fixed}}@media print{.header{display:none}}.main__breadcrumb-container{min-height:65px;}@media print{.main__breadcrumb-container{display:none}}.main__secondary-nav-and-display-container{display:flex;height:100%;min-height:calc(100vh - 50px);}.main__secondary-nav-and-display-container .main__secondary-nav-container,.main__secondary-nav-and-display-container .main__display-container{height:calc(100vh - 50px);}@media print{.main__secondary-nav-and-display-container .main__secondary-nav-container,.main__secondary-nav-and-display-container .main__display-container{height:auto;width:100vw}}.main__secondary-nav-and-display-container--sticky-footer{min-height:calc(100vh - 100px);padding-bottom:50px;}.main__secondary-nav-and-display-container--sticky-footer .main__secondary-nav-container,.main__secondary-nav-and-display-container--sticky-footer .main__display-container{height:calc(100vh - 100px)}.main__secondary-nav-container{background-color:#181d28;flex:0 0 auto;overflow-y:auto;width:225px;}@media (min-width:1200px){.main__secondary-nav-container{width:300px}}@media print{.main__secondary-nav-container{display:none}}.main__section-title{background-color:#333c4f;color:#6f798c;font-size:14px;font-weight:500;}.main__section-title--active .main__section-title-text{color:#60d33f}.main__section-title-text{line-height:20px;padding:16px 26px}.main__display-container{flex:1 1 auto;overflow-y:auto;padding:0;width:calc(100vw - 225px);padding-left:15px;padding-right:15px;}@media (min-width:800px){.main__display-container{padding-left:20px;padding-right:20px}}@media (min-width:1200px){.main__display-container{width:calc(100vw - 300px)}}@media print{.main__display-container{height:auto;width:100vw}}.primary-navigation{background-color:#1e2532;box-shadow:0 4px 4px 0 rgba(0,0,0,0.5);color:#fff;display:flex;padding:0 12px;}.primary-navigation__content{align-items:center;display:flex;flex:2 1 0%;margin-right:auto}.primary-navigation__title{font-size:14px;font-weight:400;letter-spacing:1px;white-space:nowrap}.primary-navigation__list{display:flex;list-style:none inside}.primary-navigation__item{display:flex;min-height:50px;position:relative;}.primary-navigation__item--home-item{align-items:center;flex:0 0 44px;overflow:hidden;}.primary-navigation__item--home-item::after{transform:translate(0%,101%);height:3px}.primary-navigation__item:last-child{min-width:200px}.primary-navigation__item:hover .primary-navigation__item-anchor{color:#60d33f;}.primary-navigation__item-home-anchor,.primary-navigation__item-anchor,.primary-navigation__skip-to-button{align-items:flex-end;color:#fff;cursor:pointer;display:flex;font-size:13px;font-weight:400;line-height:1.25;overflow:hidden;padding:10px 10px;position:relative;text-align:center;text-decoration:none;transition:color .35s}.primary-navigation__item-home-anchor{padding:15px 10px}.primary-navigation__item-anchor::after{transform:translate(0%,101%);height:3px}.primary-navigation__item--home-item .primary-navigation__item-anchor{padding:0}.primary-navigation__skip-to-button{background-color:#1e2532;height:100%;left:0;line-height:16.666666666666668px;position:absolute;top:0;transform:translateX(-100%);transition:all .35s;width:100%;z-index:1;}.primary-navigation__skip-to-button:focus{transform:translateX(0%)}.primary-navigation__house-icon{fill:#fff;height:18px;transition:fill .35s;width:18px;}.primary-navigation__item-home-anchor:hover .primary-navigation__house-icon{fill:#60d33f}.primary-navigation__submenu{box-shadow:2px 4px 4px 0 rgba(0,0,0,0.25);opacity:0;left:0;overflow:hidden;pointer-events:none;position:absolute;top:100%;transition:opacity .25s;width:200px;z-index:5}.primary-navigation__submenu-list{line-height:1.25;list-style:none inside;transform:translateY(-101%);transition:all .35s}.primary-navigation__submenu-item-anchor{background:#fff;color:#181d28;display:block;font-size:13px;line-height:20px;padding:6px;text-decoration:none;transition:background-color .35s,color .35s;}.primary-navigation__submenu-item-anchor:hover,.primary-navigation__submenu-item-anchor:focus{background-color:#eaeaec;color:#181d28}.primary-navigation__submenu-item-anchor--on-this-page{font-weight:700}.primary-navigation__item--open-submenu .primary-navigation__submenu{opacity:1;pointer-events:auto}.primary-navigation__item--open-submenu .primary-navigation__submenu-list{transform:translateY(0%)}@-moz-keyframes bounce{50%{transform:translateY(-10px)}}@-webkit-keyframes bounce{50%{transform:translateY(-10px)}}@-o-keyframes bounce{50%{transform:translateY(-10px)}}@keyframes bounce{50%{transform:translateY(-10px)}}.secondary-navigation{padding-left:26px;}.secondary-navigation__list{list-style:none inside}.secondary-navigation__anchor{background-repeat:no-repeat;background-position:center right;padding:12px 40px 12px 14px;position:relative}.secondary-navigation__chevron{top:50%;position:absolute;transform:translateY(-50%) rotate(-90deg);transition:all .3s;right:14px;width:12px}.secondary-navigation__chevron-path{stroke:shark;transition:all .3s}.secondary-navigation__anchor:hover .secondary-navigation__chevron-path,.secondary-navigation__anchor:focus .secondary-navigation__chevron-path{stroke:#fff}.secondary-navigation__anchor--active .secondary-navigation__chevron-path{stroke:#60d33f}.secondary-navigation__chevron--expanded{transform:translateY(-50%)}</style>
+
+
+    <header class="header" role="banner">
+    <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+        <div class="primary-navigation" aria-label="Main Menu" role="navigation">
+    <div class="primary-navigation__item primary-navigation__item--home-item primary-navigation__home-item--on-this-page">
+        <a class="primary-navigation__skip-to-button" href="#main">
+                <span>SKIP TO MAIN</span>
+        </a>
+        <a class="primary-navigation__item-home-anchor" href="https://www.in.gov/indot/div/aviation/index.html">
+            <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" aria-label="Home"><title>Home</title><path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path></svg>
+        </a>
+    </div>
+
+    <div class="primary-navigation__content">
+        <h2 class="primary-navigation__title">Indiana 2018 IDEA</h2>
+    </div>
+
+    <ul class="primary-navigation__list">
+        
+            <li class="primary-navigation__item js-primary-navigation-item">
+                <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/statewide-summary/_statewide-sum-main.html">
+                        <span>Statewide Summary</span>
+                </a>
+
+                
+                    <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/statewide-summary/inventory-area/_inv-area-sum-main.html">
+                                            Inventory Area Summary
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/statewide-summary/inventory-age/_inv-age-sum-main.html">
+                                            Inventory Age Summary
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/statewide-summary/condition-summary/_inv-cond-sum-main.html">
+                                            Inventory Condition Summary
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/statewide-summary/executive-summary/_executive-summary.html">
+                                            2019 Statewide Executive Summary Report
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li class="primary-navigation__item js-primary-navigation-item">
+                <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/airport-details/airport-details.html">
+                        <span>Airport Details</span>
+                </a>
+
+                
+            </li>
+        
+            <li class="primary-navigation__item js-primary-navigation-item">
+                <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/_maintenance-main.html">
+                        <span>Maintenance Guidelines</span>
+                </a>
+
+                
+                    <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                                            Routine Maintenance Guidelines
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/faa-maint-guidelines.html">
+                                            FAA Maintenance Guidelines
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li class="primary-navigation__item js-primary-navigation-item">
+                <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/_pci-review-main.html">
+                        <span>Pavement Inspection</span>
+                </a>
+
+                
+                    <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/pci-review/overview.html">
+                                            Overview
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/pci-review/distress-measurement-ac-main.html">
+                                            AC Distress Measurement
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/pci-review/causes-of-distress-ac.html">
+                                            Causes of AC Distress
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/pci-review/distress-measurement-pcc-main.html">
+                                            PCC Distress Measurement
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/pavement-inspection/pci-review/causes-of-distress-pcc.html">
+                                            Causes of PCC Distress
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li class="primary-navigation__item js-primary-navigation-item">
+                <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/miscellaneous/_miscellaneous-main.html">
+                        <span>Miscellaneous</span>
+                </a>
+
+                
+                    <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/miscellaneous/acronyms.html">
+                                            Acronyms
+                                    </a>
+                                </li>
+                            
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/miscellaneous/general-information.html">
+                                            General Information
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+</header>
+    <main class="main" role="main" id="main" tabindex="-1">
+
+        <div class="main__secondary-nav-and-display-container main__secondary-nav-and-display-container--sticky-footer">
+            
+            <div class="main__display-container main__display-container--sticky-footer">
+                <div class="main__display-container-inner">
+                    
+                        <div class="banner" style="background-image: url(home-page/images/a02ec-10-overview-4000x300.jpg)">
+    <div class="banner__content-container">
+        <img class="banner__title-image" src="Indiana%202018%20IDEA_files/indotLogo_70x70.jpg" alt="Indiana DOT Logo">
+        <div class="banner__title-container">
+            <h1 class="banner__title">Indiana Department of Transportation, Office of Aviation</h1>
+            <h2 class="banner__sub-title">2018 Statewide Pavement Management System Update</h2>
+        </div>
+    </div>
+</div>
+                    
+                    
+                        
+                    
+                    <h1 class="main__page-title main__page-title--hidden">Indiana 2018 IDEA</h1>
+
+
+
+    <aptech-toolbox ng-version="5.2.11"><p>This program presents the 
+results of the Indiana Department of Transportation, Office of Aviation 
+2018 pavement management system implementation.    During this project 
+the runway, taxiway, apron, T-hangar, and helipad pavements at selected 
+airports in Indiana were evaluated.    This program presents the results
+ of the APMS update and is organized into the following modules 
+accessible from the menu above:</p><html-and-image configpath="home-page/html-and-image.json"><div class="html-and-image">
+    <div class="html-and-image__html-container">
+          <ul>    <li>      <p>        <b>          <a href="https://www.in.gov/indot/div/aviation/statewide-summary/_statewide-sum-main.html" style="color: #000000">Statewide Summary</a>        </b>—View
+ a summary of pavement inventory area, age, and condition information at
+ the statewide level. This section also includes a link to the 2019 
+Statewide Executive Summary Report.       </p>    </li>    <li>      <p>        <b>          <a href="https://www.in.gov/indot/div/aviation/airport-details/airport-details.html" style="color: #000000">Airport Details</a>        </b>—View
+ detailed information about each individual airport including inventory 
+information, condition data, work history information, photographs,     
+    the proposed maintenance and rehabilitation plan, and a copy of the 
+individual report.      </p>    </li>    <li>      <p>        <b>          <a href="https://www.in.gov/indot/div/aviation/maintenance/_maintenance-main.html" style="color: #000000">Maintenance Guidelines</a>        </b>—View
+ general recommendations for pavement maintenance at Indiana airports as
+ well as FAA guidelines for pavement maintenance.      </p>    </li>    <li>      <p>        <b>          <a href="https://www.in.gov/indot/div/aviation/pavement-inspection/_pci-review-main.html" style="color: #000000">Pavement Inspection</a>        </b>—Review background information on the PCI survey method used to assess pavement condition.      </p>    </li>    <li>      <p>        <b>          <a href="https://www.in.gov/indot/div/aviation/miscellaneous/_miscellaneous-main.html" style="color: #000000">Miscellaneous</a>        </b>—View
+ definitions of acronyms used throughout the IDEA, and learn about this 
+program as well as Applied Pavement        Technology, Inc.      </p>    </li>  </ul>
+    </div>
+    <div class="html-and-image__image-container">
+        <img class="html-and-image__image" src="Indiana%202018%20IDEA_files/rw927pc-40-overview-640x480.jpg" alt="This is an overview photo of Runway 09-27 at Porter County Regional Airport in Valparaiso, IN.">
+    </div>
+</div>
+</html-and-image></aptech-toolbox>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="homepage-footer">
+    <a class="homepage-footer__link" target="_blank" href="http://www.appliedpavement.com/">
+        <img class="homepage-footer__image" alt="Developed by Applied Pavement Technology" src="data:image/png;base64,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">
+    </a>
+</div>
+    </main>
+
+
+<script>window.ideaPageDepth=0;</script>
+
+
+    <script src="Indiana%202018%20IDEA_files/app.js"></script>
+
+    <script src="Indiana%202018%20IDEA_files/idea-scripts.js"></script>
+
+
+    <link rel="stylesheet" href="Indiana%202018%20IDEA_files/app.css">
+
+
+    <script>
+        
+        SystemJS.import('app/app-normal');
+        
+    </script>
+
+<script>
+    function processTables() {
+        var stickyTables = document.querySelectorAll('table:not([class]):not([processed])');
+        for(var tableIndex = 0; tableIndex < stickyTables.length; tableIndex++) {
+            var table = stickyTables[tableIndex];
+            var tableHeader = table.querySelector('thead');
+            if(tableHeader) {
+                var tableHeaderTop = tableHeader.getBoundingClientRect().top;
+                var tableHeaders = table.querySelectorAll('thead th');
+
+                var offset = 0;
+                if (window.safari) {
+                    offset += 2;
+                    var tableCaption = table.querySelector('caption');
+                    if (tableCaption) {
+                        offset += tableCaption.getBoundingClientRect().height;
+                        offset += parseInt(window.getComputedStyle(tableCaption).marginTop);
+                        offset += parseInt(window.getComputedStyle(tableCaption).marginBottom);
+                    }
+                }
+
+                for (var headerIndex = 0; headerIndex < tableHeaders.length; headerIndex++) {
+                    var th = tableHeaders[headerIndex];
+                    th.style.top = th.getBoundingClientRect().top - tableHeaderTop - offset + "px";
+                }
+            }
+            table.setAttribute('processed', true);
+
+        }
+    }
+    window.onload = function () {
+        processTables();
+        var target = document.getElementsByTagName('body')[0];
+        var observer = new MutationObserver(processTables);
+        var config = {childList: true, subtree: true};
+        observer.observe(target, config);
+    }
+</script>
+
+</body></html>

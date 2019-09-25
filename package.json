@@ -1,26 +1,13 @@
 {
   "name": "airport-final-phase",
   "version": "1.0.0",
-  "description": "The Final Phase of my Project",
+  "description": "final version of airport project",
   "main": "index.js",
-  "scripts": {
-    "test": "node index",
-    "dev": "nodemon index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moh-C/airport-final-phase.git"
-  },
-  "author": "Aaron",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moh-C/airport-final-phase/issues"
-  },
-  "homepage": "https://github.com/moh-C/airport-final-phase#readme",
+  "repository": "https://github.com/moh-C/airport-final-phase.git",
+  "author": "Aaron <mohammad.chegini@hotmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "chosen": "^0.0.2",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "nodemon": "^1.19.2"
+    "express-handlebars": "^3.1.0"
   }
 }

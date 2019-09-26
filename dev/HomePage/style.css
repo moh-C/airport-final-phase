@@ -1062,6 +1062,7 @@ body {
 .main__secondary-nav-and-display-container {
   display: flex;
   height: 100%;
+  width: 100vw;
   min-height: calc(100vh - 50px);
 }
 
@@ -1183,4 +1184,86 @@ img {
 
 .main__display-container p:not([class]) {
   margin-bottom: 30px;
+}
+
+.html-and-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.html-and-image__html-container:nth-child(n) {
+  clear: none;
+  margin-right: 50px;
+}
+
+.html-and-image__html-container {
+  width: 100%;
+}
+
+.html-and-image__html-container {
+  float: left;
+  width: 33.33333333333333%;
+  width: calc(100% * 0.5 - 50px + 0.5 * 50px);
+}
+
+.main__display-container ul:not([class]),
+.main__display-container ol:not([class]) {
+  list-style: none inside;
+}
+
+.main__display-container ul:not([class]) li,
+.main__display-container ol:not([class]) li {
+  display: block;
+  margin-left: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.main__display-container ul:not([class]) li p,
+.main__display-container ol:not([class]) li p {
+  margin-bottom: 10px;
+}
+
+.main__display-container p:not([class]) {
+  margin-bottom: 30px;
+}
+
+.html-and-image__image-container:nth-child(n) {
+  clear: none;
+  margin-right: 55px;
+}
+
+.html-and-image__image-container {
+  width: 100%;
+}
+
+.html-and-image__image-container {
+  float: left;
+  width: 50%;
+  width: calc(100% * 0.5 - 55px + 0.5 * 55px);
+}
+
+.html-and-image__image-container:last-child {
+  margin-right: 0;
+}
+
+.html-and-image:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.homepage-footer {
+  background: #eaeaec;
+  bottom: 0;
+  box-shadow: 0 -4px 4px 0 #eaeaec;
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  position: fixed;
+  right: 0;
 }

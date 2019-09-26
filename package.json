@@ -7,13 +7,17 @@
   "author": "Aaron <mohammad.chegini@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "homePageBuilder": "parcel build dev/HomePage/index.html"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^3.1.0",
+    "parcel-bundler": "^1.12.3",
+    "webpack-cli": "^3.3.9"
   },
   "devDependencies": {
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "webpack": "^4.41.0"
   }
 }

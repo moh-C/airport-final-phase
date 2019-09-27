@@ -1,0 +1,28 @@
+{
+  "name": "parcel-bundler-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moh-C/parcel-bundler-crash-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moh-C/parcel-bundler-crash-course/issues"
+  },
+  "homepage": "https://github.com/moh-C/parcel-bundler-crash-course#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "serialize-to-js": "^3.0.0"
+  }
+}

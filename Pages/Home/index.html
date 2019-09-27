@@ -1,0 +1,284 @@
+<html lang="fa">
+
+<head>
+    <title>سامانه پایش فرودگاه های کشور</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+
+    <script src="./script.js"></script>
+
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body dir="rtl">
+
+    <div class="preload">
+        <img id="airplane" src="./image/airplane-min.png" alt="airplane">
+        <img src="./image/Clouds.png" id="cloud1" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud2" alt="Clouds" class="cloud">
+        <img src="./image/Clouds.png" id="cloud3" alt="Clouds" class="cloud">
+        <h3 id="preloader-custom-text1">بارگزاری صفحه برای بار اول ممکن است طول بکشد</h3>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const preload = document.querySelector('.preload');
+            preload.classList.add('destoyed');
+        })
+    </script>
+
+    <header class="header">
+        <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+
+            <div class="primary-navigation">
+
+                <div class="primary-navigation__item primary-navigation__item--home-item primary-navigation__home-item--on-this-page">
+
+                    <a class="primary-navigation__item-home-anchor" href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                        <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                            <title>Home</title>
+                            <path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="primary-navigation__content">
+                    <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
+                </div>
+                <!-- End of Primary Navigation Content-->
+
+                <ul class="primary-navigation__list">
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>خلاصه مدیریتی</span>
+                        </a>
+
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">خلاصه مدیریتی انبار 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Statewide Summary Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>گزارش ها</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">گزارش ها 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Airport Details Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>وضعیت روسازی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">وضعیت روسازی 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Maintenance Guidelines Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>دستورالعمل تعمیر و نگهداری</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل تعمیر و نگهداری 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Pavement Inspection Submenu-->
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>دستورالعمل ارزیابی روسازی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">دستورالعمل ارزیابی روسازی 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">
+                            <span>متفرقه</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 1</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 2</a>
+                                </li>
+
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="https://www.in.gov/indot/div/aviation/maintenance/routine-maint-guidelines.html">متفرقه 3</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Miscellaneous Submenu -->
+                </ul>
+
+            </div>
+            <!--Primary Navigation-->
+
+        </div>
+        <!--header__sticky-wrapper-->
+    </header>
+    <!-- Header -->
+
+    <main class="main" id="main">
+        <div class="main__secondary-nav-and-display-container main__secondary-nav-and-display-container--sticky-footer">
+
+            <div class="main__display-container main__display-container--sticky-footer">
+                <div class="main__display-container-inner">
+
+                    <div class="banner" style="background-image: url(https://www.in.gov/indot/div/aviation/home-page/images/a02ec-10-overview-4000x300.jpg)">
+                        <div class="banner__content-container">
+                            <img class="banner__title-image" src="https://www.in.gov/indot/div/aviation/home-page/images/indotLogo_70x70.jpg" alt="Indiana DOT Logo">
+                            <div class="banner__title-container">
+                                <h1 class="banner__title">اداره حمل و نقل تهران ، دفتر حمل و نقل هوایی</h1>
+                                <h2 class="banner__sub-title">بروزرسانی سیستم مدیریت آسفالت سال 2019</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aptech-toolbox ng-version="5.2.11">
+                        <p>این برنامه نتایج حاصل از اجرای سیستم مدیریت روسازی پیاده رو اداره حمل و نقل ایندیانا ، دفتر حمل و نقل هوایی 2018 را ارائه می دهد. در طی این پروژه باند فرودگاه ، تاکسی ، پیش بند ، T-hangar و آسفالت هلی پد در فرودگاه های منتخب در ایندیانا مورد بررسی قرار گرفت. این برنامه نتایج به روزرسانی APMS را ارائه می دهد و در ماژول های زیر که از فهرست بالا قابل دسترسی است ، سازماندهی می شود:</p>
+                        <html-and-image>
+                            <div class="html-and-image">
+                                <div class="html-and-image__html-container">
+                                    <ul>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">خلاصه مدیریتی</a></b> — خلاصه ای از منطقه موجودی پیاده رو ، سن و اطلاعات وضعیت موجود در سطح کشور را مشاهده کنید. این بخش همچنین شامل پیوند به گزارش خلاصه اجرائی ایالتی 2019 در سراسر کشور است.</p>
+                                        </li>
+                                        <br>
+                                        <br>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">گزارش ها</a></b> — گزارش هایی را در این مورد دریافت نمایید.</p>
+                                        </li>
+                                        <br>
+                                        <br>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">وضعیت روسازی</a></b> — اطلاعات دقیق در مورد هر فرودگاه جداگانه شامل اطلاعات موجودی ، داده های وضعیت ، اطلاعات مربوط به سابقه کار ، عکس ها ، برنامه پیشنهادی تعمیر و نگهداری و توانبخشی و یک نسخه از گزارش فردی را مشاهده کنید.</p>
+                                        </li>
+                                        <br>
+                                        <br>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">دستورالعمل تعمیر و نگهداری</a></b> — توصیه های کلی را برای تعمیر و نگهداری پیاده رو در فرودگاه های ایندیانا و همچنین دستورالعمل های FAA برای نگهداری روسازی مشاهده کنید.</p>
+                                        </li>
+                                        <br>
+                                        <br>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">دستورالعمل ارزیابی روسازی</a></b> — اطلاعات پیش زمینه را در روش بررسی PCI که برای ارزیابی وضعیت روسازی استفاده شده است ، مرور کنید.</p>
+                                        </li>
+                                        <br>
+                                        <br>
+                                        <li>
+                                            <p><b><a href="#" style="color: #000000">متفرقه</a></b> — تعاریف کلمات اختصاری مورد استفاده در IDEA را مشاهده کنید ، و در مورد این برنامه و همچنین شرکت ما اطلاعات کسب کنید.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="html-and-image__image-container">
+                                    <img class="html-and-image__image" src="https://www.in.gov/indot/div/aviation/home-page/images/rw927pc-40-overview-640x480.jpg" alt="This is an overview photo of Runway 09-27 at Porter County Regional Airport in Valparaiso, IN.">
+                                </div>
+                            </div>
+                        </html-and-image>
+                    </aptech-toolbox>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="homepage-footer">
+            <a class="homepage-footer__link" target="_blank" href="http://www.appliedpavement.com/">
+                <img class="homepage-footer__image" alt="Developed by Applied Pavement Technology" src="data:image/png;base64,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">
+            </a>
+        </div><!-- homepage-footer -->
+    </main>
+    <!--Main-->
+
+</body>
+
+</html>

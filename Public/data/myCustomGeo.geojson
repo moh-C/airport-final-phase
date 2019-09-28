@@ -1,0 +1,38 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "id": "Q",
+            "properties": { "name": "منطقه اول", "color": "#fce", "type":"تندرو", "number":"124", "surfaceType":"خیار", "area":"152"},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [51.118180, 35.424323],
+                        [51.118390, 35.424814],
+                        [51.121520, 35.423943],
+                        [51.121322, 35.423431],
+                        [51.118180, 35.424323]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "B",
+            "properties": { "name": "منطقه دوم", "color": "#fc3", "type": "کندرو", "number":"7534", "surfaceType":"گوجه", "area":"1897"},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [51.121520, 35.423943],
+                        [51.123626, 35.423360],
+                        [51.123432, 35.422842],
+                        [51.121322, 35.423431],
+                        [51.121520, 35.423943]
+                    ]
+                ]
+            }
+        }
+    ]
+}

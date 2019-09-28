@@ -21,8 +21,20 @@ router.get('/Maintenance/FAA_Guidelines.html', (req, res) => {
   res.render('FAAMaintenanceGuidelines');
 });
 
-router.get('Maintenance/Routine_Guidelines.html', (req, res) => {
+router.get('/Maintenance/Routine_Guidelines.html', (req, res) => {
   res.render('RoutineMaintenanceGuidelines');
+});
+
+router.get('/Miscellaneous/Main.html', (req, res) => {
+  res.render('miscellaneousMain');
+});
+
+router.get('/Miscellaneous/Acronyms.html', (req, res) => {
+  res.render('miscellaneiysAcronyms');
+});
+
+router.get('/Miscellaneous/General_Info.html', (req, res) => {
+  res.render('miscellaneousGeneralInfo');
 });
 
 module.exports = router;

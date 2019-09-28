@@ -1,15 +1,31 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/home.html', (req, res) => {
+router.get('/Home.html', (req, res) => {
   res.render('home');
 });
 
-router.get('/airport.html', (req, res) => {
+router.get('/Statewide_Summary/Main.html', (req, res) => {
+  res.render('stateMain');
+});
+
+router.get('/Statewide_Summary/PCI_Airport.html', (req, res) => {
+  res.render('statePCIAirport');
+});
+
+router.get('/Statewide_Summary/Inventory_Condition.html', (req, res) => {
+  res.render('stateInventoryCondition');
+});
+
+router.get('/Statewide_Summary/State_Wide_Summary_Report.html', (req, res) => {
+  res.render('stateSummary');
+});
+
+router.get('/Airport.html', (req, res) => {
   res.render('airport');
 });
 
-router.get('/login.html', (req, res) => {
+router.get('/Login.html', (req, res) => {
   res.render('login');
 });
 
@@ -23,18 +39,6 @@ router.get('/Maintenance/FAA_Guidelines.html', (req, res) => {
 
 router.get('/Maintenance/Routine_Guidelines.html', (req, res) => {
   res.render('RoutineMaintenanceGuidelines');
-});
-
-router.get('/Miscellaneous/Main.html', (req, res) => {
-  res.render('miscellaneousMain');
-});
-
-router.get('/Miscellaneous/Acronyms.html', (req, res) => {
-  res.render('miscellaneiysAcronyms');
-});
-
-router.get('/Miscellaneous/General_Info.html', (req, res) => {
-  res.render('miscellaneousGeneralInfo');
 });
 
 router.get('/Pavement_Inspection/Main.html', (req, res) => {
@@ -51,6 +55,18 @@ router.get('/Pavement_Inspection/AC_Distress.html', (req, res) => {
 
 router.get('/Pavement_Inspection/PCC_Distress.html', (req, res) => {
   res.render('pavementPCCDistress');
+});
+
+router.get('/Miscellaneous/Main.html', (req, res) => {
+  res.render('miscellaneousMain');
+});
+
+router.get('/Miscellaneous/Acronyms.html', (req, res) => {
+  res.render('miscellaneiysAcronyms');
+});
+
+router.get('/Miscellaneous/General_Info.html', (req, res) => {
+  res.render('miscellaneousGeneralInfo');
 });
 
 module.exports = router;

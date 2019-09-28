@@ -1,0 +1,255 @@
+<html lang="fa">
+   <head>
+      <title>سامانه پایش فرودگاه های کشور</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="./favicon.ico" sizes="16x16">
+      <script src="../js/script.js"></script>
+      <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../css/style.css">
+   </head>
+   <body dir="rtl">
+      <div class="preload">
+        <img id="airplane" src="./images/airplane-min.png" alt="airplane">
+        <img src="../images/Clouds.png" id="cloud1" alt="Clouds" class="cloud">
+        <img src="../images/Clouds.png" id="cloud2" alt="Clouds" class="cloud">
+        <img src="../images/Clouds.png" id="cloud3" alt="Clouds" class="cloud">
+        <h3 id="preloader-custom-text1">بارگزاری صفحه برای بار اول ممکن است طول بکشد</h3>
+    </div>
+      <script>
+         window.addEventListener('load', () => {
+             const preload = document.querySelector('.preload');
+             preload.classList.add('destoyed');
+         })
+      </script>
+      <header class="header">
+         <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+            <div class="primary-navigation">
+               <div class="primary-navigation__item primary-navigation__item--home-item">
+                  <a class="primary-navigation__item-home-anchor" href="#">
+                     <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                        <title>Home</title>
+                        <path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path>
+                     </svg>
+                  </a>
+               </div>
+               <div class="primary-navigation__content">
+                  <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
+               </div>
+               <!-- End of Primary Navigation Content-->
+               <ul class="primary-navigation__list">
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor primary-navigation__item-anchor--on-this-page" href="#">
+                     <span>خلاصه مدیریتی</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <!--Statewide Summary Submenu-->
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                     <span>گزارش ها</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <!--Airport Details Submenu-->
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                     <span>وضعیت روسازی</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">وضعیت روسازی 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <!--Maintenance Guidelines Submenu-->
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                     <span>دستورالعمل تعمیر و نگهداری</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <!--Pavement Inspection Submenu-->
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                     <span>دستورالعمل ارزیابی روسازی</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="primary-navigation__item js-primary-navigation-item">
+                     <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                     <span>متفرقه</span>
+                     </a>
+                     <div class="primary-navigation__submenu">
+                        <ul class="primary-navigation__submenu-list">
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 1</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 2</a>
+                           </li>
+                           <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                              <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 3</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <!-- Miscellaneous Submenu -->
+               </ul>
+            </div>
+            <!--Primary Navigation-->
+         </div>
+         <!--header__sticky-wrapper-->
+      </header>
+      <!-- Header -->
+      <main class="main" role="main" id="main" tabindex="-1">
+         <div class="main__secondary-nav-and-display-container ">
+            <div class="main__secondary-nav-container" aria-label="Statewide Summary navigation">
+               <h2 class="main__section-title ">
+                  <a class="main__section-anchor" href="#">
+                     <div class="main__section-title-text">خلاصه ای در سراسر کشور</div>
+                  </a>
+               </h2>
+               <div class="secondary-navigation">
+                  <ul class="secondary-navigation__list">
+                     <li>
+                        <a href="#" class="secondary-navigation__anchor
+                           ">
+                           خلاصه منطقه موجودی
+                           <svg class="secondary-navigation__chevron
+                              " width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <title>Chevron</title>
+                              <g fill="none" fill-rule="evenodd">
+                                 <path d="M11 .5l-5 5-5-5" stroke="#FFF"></path>
+                                 <path class="secondary-navigation__chevron-path" d="M11 1.5l-5 5-5-5" stroke-width="2"></path>
+                              </g>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="secondary-navigation__anchor
+                           ">
+                           خلاصه سن موجودی
+                           <svg class="secondary-navigation__chevron
+                              " width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <title>Chevron</title>
+                              <g fill="none" fill-rule="evenodd">
+                                 <path d="M11 .5l-5 5-5-5" stroke="#FFF"></path>
+                                 <path class="secondary-navigation__chevron-path" d="M11 1.5l-5 5-5-5" stroke-width="2"></path>
+                              </g>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="secondary-navigation__anchor">
+                           خلاصه وضعیت موجودی
+                           <svg class="secondary-navigation__chevron" width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <title>Chevron</title>
+                              <g fill="none" fill-rule="evenodd">
+                                 <path d="M11 .5l-5 5-5-5" stroke="#FFF"></path>
+                                 <path class="secondary-navigation__chevron-path" d="M11 1.5l-5 5-5-5" stroke-width="2"></path>
+                              </g>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="secondary-navigation__anchor secondary-navigation__anchor--active">
+                        گزارش خلاصه عملکرد اجرایی سال 2019
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="main__display-container ">
+               <div class="main__display-container-inner">
+                  <div class="main__breadcrumb-container">
+                     <ul class="breadcrumbs" aria-label="Breadcrumbs">
+                        <li class="breadcrumbs__crumb">
+                           <a class="breadcrumbs__crumb-anchor" href="#">
+                           سامانه حمل و نقل هوایی
+                           </a>
+                           <span class="breadcrumbs__crumb-separator">/</span>
+                        </li>
+                        <li class="breadcrumbs__crumb">
+                           <a class="breadcrumbs__crumb-anchor" href="#">
+                           خلاصه مدیریتی
+                           </a>
+                           <span class="breadcrumbs__crumb-separator">/</span>
+                        </li>
+                        <li class="breadcrumbs__crumb" aria-labelledby="breadcrumbs">
+                           <span class="breadcrumbs__crumb-current">
+                           گزارش خلاصه عملکرد اجرایی سال 2019
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <h1 class="#">گزارش خلاصه عملکرد اجرایی سال 2019</h1>
+                  <p>گزارش سیستم مدیریت روسازی 2019 "خلاصه اجرائی اجرایی سراسر کشور" با کلیک روی پیوند زیر می توانید مشاهده کنید.</p>
+                  <ul>
+                     <p style="margin-left: 40px; margin-top: -10px;">
+                        <a href="#">گزارش خلاصه عملکرد اجرایی سال 2019</a>
+                    </p>
+                  </ul>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

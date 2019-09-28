@@ -37,4 +37,20 @@ router.get('/Miscellaneous/General_Info.html', (req, res) => {
   res.render('miscellaneousGeneralInfo');
 });
 
+router.get('/Pavement_Inspection/Main.html', (req, res) => {
+  res.render('pavementMain');
+});
+
+router.get('/Pavement_Inspection/Overview.html', (req, res) => {
+  res.render('pavementOverview');
+});
+
+router.get('/Pavement_Inspection/AC_Distress.html', (req, res) => {
+  res.render('pavementACDistress');
+});
+
+router.get('/Pavement_Inspection/PCC_Distress.html', (req, res) => {
+  res.render('pavementPCCDistress');
+});
+
 module.exports = router;

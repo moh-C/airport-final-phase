@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.redirect('/Home.html');
+});
+
 router.get('/Home.html', (req, res) => {
   res.render('home');
 });

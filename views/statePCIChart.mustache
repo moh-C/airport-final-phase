@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./favicon.ico" sizes="16x16">
     <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -229,17 +234,17 @@
                 <div class="main__breadcrumb-container">
                     <ul class="breadcrumbs" aria-label="Breadcrumbs">
                         <li class="breadcrumbs__crumb">
-                            <a class="breadcrumbs__crumb-anchor" href="../../index.html">سامانه حمل و نقل هوایی</a>
+                            <a class="breadcrumbs__crumb-anchor" href="#">سامانه حمل و نقل هوایی</a>
                             <span class="breadcrumbs__crumb-separator">/</span>
                         </li>
 
                         <li class="breadcrumbs__crumb">
-                            <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\_statewide-sum-main.html">خلاصه مدیریتی</a>
+                            <a class="breadcrumbs__crumb-anchor" href="#">خلاصه مدیریتی</a>
                             <span class="breadcrumbs__crumb-separator">/</span>
                         </li>
 
                         <li class="breadcrumbs__crumb">
-                            <a class="breadcrumbs__crumb-anchor" href="../../statewide-summary\condition-summary\_inv-cond-sum-main.html">خلاصه وضعیت موجودی</a>
+                            <a class="breadcrumbs__crumb-anchor" href="#">خلاصه وضعیت موجودی</a>
                             <span class="breadcrumbs__crumb-separator">/</span>
                         </li>
 
@@ -249,8 +254,10 @@
                     </ul>
                 </div>
                 <h1 class="main__page-title ">نمودارهای خلاصه PCI در سراسر کشور</h1>
+                <canvas id="myChart"></canvas>
             </div>
         </div>
+        <script src="../js/chart.js"></script>
 </body>
 
 </html>

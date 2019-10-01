@@ -13,6 +13,10 @@ router.get('/Statewide_Summary/Main.html', (req, res) => {
   res.render('stateMain');
 });
 
+router.get('/Statewide_Summary/PCI_Charts.html', (req, res) => {
+  res.render('statePCIChart');
+});
+
 router.get('/Statewide_Summary/PCI_Airport.html', (req, res) => {
   res.render('statePCIAirport');
 });

@@ -10,7 +10,7 @@
   },
   "license": "Mup",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "hjs": "^0.0.6",
     "hogan-middleware": "^0.2.2",
     "nodemon": "^1.19.2"
